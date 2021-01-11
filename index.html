@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/style/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Beer App</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Punk API Beer App</h1>
+    </div>
+
+    <div class="levels-container">
+        <div class="abv-container container">
+            <h2>Alcohol Vol(ABV):</h2>
+            <div class="abv-levels">
+                <form class="abv-form levels">
+                    <button id="abv-all">ALL</button>
+
+                    <label for="abv-1"><img src="assets/images/beer-sm-a.png" class="abv abv-sm"></label>
+                    <input type="radio" class="radio" id="abv-1">
+
+                    <label for="abv-2"><img src="assets/images/beer-md-a.png" class="abv abv-md"></label>
+                    <input type="radio" class="radio" id="abv-2">
+
+                    <label for="abv-3"><img src="assets/images/beer-lg-a.png" class="abv abv-lg"></label>
+                    <input type="radio" class="radio" id="abv-3">
+                </form>
+            </div>
+        </div>
+        <div class="ibu-container container">
+            <h2>Hoppiness(IBU):</h2>
+            <div class="ibu-levels">
+                <form class="ibu-form levels">
+                    <button id="ibu-all">ALL</button>
+
+                    <label for="ibu-1"><img src="assets/images/hoppiness-sm.png" class="ibu ibu-sm"></label>
+                    <input type="radio" id="ibu-1">
+
+                    <label for="ibu-2"><img src="assets/images/hoppiness-md.png" class="ibu ibu-md"></label>
+                    <input type="radio" id="ibu-2">
+
+                    <label for="ibu-3"><img src="assets/images/hoppiness-lg.png" class="ibu ibu-lg"></label>
+                    <input type="radio" id="ibu-3">
+                </form>
+            </div>
+        </div>
+        <div class="pagination-container container">
+            <h2>Page: <span id="page">1</span></h2>
+            <div class="pages levels">
+                <button id="prev-page" class="button" disabled> <i class="fas fa-arrow-left"></i> </button>
+                <button id="next-page" class="button"> <i class="fas fa-arrow-right"></i> </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="beer-results-container">
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
